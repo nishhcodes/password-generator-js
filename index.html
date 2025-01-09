@@ -5,64 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form | Validation</title>
     <style>
-        form {
-            padding: 10px;
+        fieldset {
+            padding: 20px;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
     <form action="example.com/path" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Bob..." name="first_name"><br>
+    
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Bob..." name="first_name"><br>
 
-        <label for="email">Email: </label>
-        <input type="email" name="email_id" id="email" placeholder="bob123@gmail.com"><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email_id" id="email" placeholder="bob123@gmail.com"><br>
+
+            <label for="number">Number: </label>
+            <input type="number" id="number" name="phone_number" placeholder="9907535969"><br>
+            
+            <label for="password">Password: </label>
+            <input type="password" name="password_id" id="password"><br>
+        </fieldset>
         
-        <label for="password">Password: </label>
-        <input type="password" name="password_id" id="password"><br>
+        <fieldset>
+            <legend>Additional Details</legend>
+            <label for="dob">Date: </label>
+            <input type="date" id="dob" for="date"><br>
 
-        <label for="number">Number: </label>
-        <input type="number" id="number" name="phone_number" placeholder="9907535969"><br>
-        
-        <label for="dob">Date: </label>
-        <input type="date" id="dob" for="date"><br>
+            <label for="options">Subjects: </label>
+            <select name="option" id="options">
+                <optgroup label="ARTS">Arts</optgroup>
+                    <option value="history">History</option>
+                    <option value="geography">Geography</option>
+                    <option value="english">English</option>
+                <optgroup label="SCIENCE">Science</optgroup>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="physics">Physics</option>
+                    <option value="biology">Biology</option>
+                <optgroup label="COMMERCE">Commerce</optgroup>
+                    <option value="bussiness_studies">Bussiness Studies</option>
+                    <option value="accountants">Accountants</option>
+                    <option value="banking">Banking</option>
+            </select><br>
 
-        <label for="options">Subjects: </label>
-        <select name="option" id="options">
-            <optgroup label="ARTS">Arts</optgroup>
-                <option value="history">History</option>
-                <option value="geography">Geography</option>
-                <option value="english">English</option>
-            <optgroup label="SCIENCE">Science</optgroup>
-                <option value="chemistry">Chemistry</option>
-                <option value="physics">Physics</option>
-                <option value="biology">Biology</option>
-            <optgroup label="COMMERCE">Commerce</optgroup>
-                <option value="bussiness_studies">Bussiness Studies</option>
-                <option value="accountants">Accountants</option>
-                <option value="banking">Banking</option>
-        </select><br>
+            <label for="handicap">Physically Challeneged: </label><br>
+            <input type="radio" id="fit" name="fit_check" value="fit">
+            <label for="fit">Yes</label><br>
+            
+            <input type="radio" id="unfit" name="unfit_check" value="unfit">
+            <label for="unfit">No</label><br>
 
-        <label for="handicap">Physically Challeneged: </label><br>
-        <input type="radio" id="fit" name="fit_check" value="fit">
-        <label for="fit">Yes</label><br>
-        
-        <input type="radio" id="unfit" name="unfit_check" value="unfit">
-        <label for="unfit">No</label><br>
-
-        <label for="additional_sub">Optional Subjects: </label><br>
-        <div>
-            <input type="checkbox" id="music" name="music_sub">
-            <label for="music">Music</label><br>    
-        </div>
-        <div>
-            <input type="checkbox" id="language" name="language_sub">
-            <label for="language_sub">English</label>
-        </div>
+            <label for="additional_sub">Optional Acitivities: </label><br>
+            <div>
+                <input type="checkbox" id="music" name="music_sub">
+                <label for="music">Music</label><br>    
+            </div>
+            <div>
+                <input type="checkbox" id="language" name="language_sub" checked>
+                <label for="language_sub">English</label>
+            </div>
+            <div>
+                <input type="checkbox" id="karate_classes" name="karate">
+                <label for="karate_classes">Karate</label>
+            </div>
+        </fieldset>
 
         <label for="feedback">Feedback: </label><br>
         <textarea name="review" id="feedback" rows="4" cols="20"></textarea><br>
 
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
