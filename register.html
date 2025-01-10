@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="#" method="post">
+                <h2>Create an account!</h2>
+                <div class="form_field">
+                    <div>
+                        <label for="name">NAME</label><br>
+                        <input type="text" id="name" name="user_name" minlength="3" maxlength="12" required> 
+                    </div>
+                    <div>
+                        <label for="surname">SURNAME</label><br>
+                        <input type="text" id="surname" name="user_surname" minlength="3" maxlength="20" required>    
+                    </div>
+                </div>
+                <div class="form_field">
+                    <div>
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE</label><br>
+                        <input type="tel" id="phone" name="user_contact" required>
+                    </div>
+                </div>
+                <div class="form_field">
+                    <div>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" id="password" name="user_password" required>
+                    </div>
+                    <div>
+                        <label for="re-password">PASSWORD</label><br>
+                        <input type="password" id="re-password" name="re_user_password" required>
+                    </div>
+                </div>
+
+        
+                <button type="submit">Login</button>
+                <p>Already have an account? <strong><a href="index.html">Login</a ></strong></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
