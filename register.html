@@ -9,7 +9,7 @@
 <body>
     <main>
         <div class="container">
-            <form action="#" method="post">
+            <form>
                 <h2>Create an account!</h2>
                 <div class="form_field">
                     <div>
@@ -28,7 +28,7 @@
                     </div>
                     <div>
                         <label for="phone">PHONE</label><br>
-                        <input type="tel" id="phone" name="user_contact" required>
+                        <input type="tel" id="phone" name="user_contact" maxlength="10" required>
                     </div>
                 </div>
                 <div class="form_field">
@@ -38,12 +38,12 @@
                     </div>
                     <div>
                         <label for="re-password">PASSWORD</label><br>
-                        <input type="password" id="re-password" name="re_user_password" required>
+                        <input type="password" id="re_password" name="re_user_password" required>
                     </div>
                 </div>
 
         
-                <button type="submit">Login</button>
+                <button type="submit" id="register">Login</button>
                 <p>Already have an account? <strong><a href="index.html">Login</a ></strong></p>
             </form>
         </div>
