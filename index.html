@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator | JS</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-800 p-4 flex flex-col ">
-    <div class="w-full flex justify-center">
-        <button id="generate" class="bg-sky-400 text-gray-50 font-bold text-2xl px-4 py-2 rounded-xl">Generate Password</button>
-    </div>
-    <div id="password-list-container" class="bg-amber-400 p-6"></div>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <button id="generate">Generate Password</button>
+        </div>
+        <div class="password-container">
+            <div id="password-list-container">e.g: 12xYtm</div>
+        </div>
+    </div>        
 </body>
 </html>

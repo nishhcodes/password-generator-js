@@ -48,6 +48,4 @@ function displayPasswordCombinations() {
     })
 }
 
-
-
 document.getElementById('generate').addEventListener('click', getDifferentPasswords);
