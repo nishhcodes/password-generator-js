@@ -12,7 +12,7 @@ A simple and lightweight password generator built with **HTML**, **CSS**, and **
 
 ## How to Use
 
-1. Open the [App Link](https://nishhcodes.github.io/password-generator-js/) in your browser.
+1. Open the [App](https://nishhcodes.github.io/password-generator-js/) in your browser.
 2. Click the **"Generate Passwords"** button.
 3. View the generated passwords displayed on the screen.
 
